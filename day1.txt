@@ -1,0 +1,67 @@
+#program to print 0-5 and conform loop ending
+count=0
+while count<=5:
+    print("count:",count)
+    count+=1
+else:
+    print("loop completed")
+
+_____________________________________________
+#while-else break printing 1-10 by break at 5
+num=1
+while num<=10:
+    if num==6:
+        print("breaking loop at 6")
+        break
+    print("number:",num)
+    num+=1
+else:
+    print("break at 5 hence nothing prints")
+
+________________________________________________
+
+#continue
+num=0
+while num<10:
+    num+=1
+    if num%2==0:
+     continue 
+    print("odd numbers:",num)
+_____________________________________________________
+
+#program to print reaverse of a number using while loop
+n=4831
+eb=0
+while(n!=0):
+    r=n%10
+    eb=eb*10+r
+    n=n//10
+print(eb)
+___________________________________________________________
+#program to print reverse of a string
+s="Madhu"
+rev=""
+i=len(s)-1
+while i>=0:
+    rev+=s[i]
+    i-=1
+print("reversed string:",rev)
+__________________________________________________
+
+num=int(input("enter the number:"))
+copy=num
+sum=0
+while num>0:
+    d=num%10
+    f=1
+    for i in range(1,d+1):
+        f*=i
+        sum+=f
+        num//10
+        if sum==copy:
+            print(copy,"is a strong number")
+_____________________
+fruits=['Apple','Banana','kiwi']
+for fruit in fruits:
+    print(fruit)
+    
